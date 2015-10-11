@@ -7,6 +7,7 @@ Mailboxer.setup do |config|
   config.default_from = "no-reply@mailboxer.com"
 
   #Configures the methods needed by mailboxer
+  #The email method should accept one argument, a Mailable instance and should return the email address
   config.email_method = :mailboxer_email
   config.name_method = :name
 
